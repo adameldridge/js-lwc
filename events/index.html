@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Events</title>
+    </head>
+    <body>
+        <h1>Events</h1>
+
+        <h2>Add and remove event listeners</h2>
+        <button onclick="removeHandler()">Click</button>
+        <div class="demo"></div>
+
+        <h2>Event bubbling</h2>
+        <form onclick="alert('form')">
+            I am form
+            <div onclick="alert('div')">I am div
+                <p onclick="alert('p')">I am p</p>
+            </div>
+        </form>
+
+        <h2>Custom Events</h2>
+        <button onclick="callCustomMethod()">Click</button>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
